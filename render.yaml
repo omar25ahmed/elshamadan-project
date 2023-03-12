@@ -1,5 +1,5 @@
 databases:
-  - name: mysite
+  - name: elshamadan_project
     databaseName: mysite
     user: mysite
     plan: free
