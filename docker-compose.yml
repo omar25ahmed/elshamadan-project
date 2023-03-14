@@ -1,7 +1,7 @@
 services:
   tailwind:
     build: .
-    command: bash -c "bin/dev"
+    command: bash -c "bin/rails tailwindcss:watch"
     volumes:
       - .:/usr/src/app
       - bundle:/usr/local/bundle
