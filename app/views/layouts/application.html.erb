@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
-    <title>Railsondocker</title>
+    <title>Elshamadan</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,11 +9,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex text-red-500">
+    <%= render "shared/navbar" %>
+    <main class="">
       <%= yield %>
     </main>
   </body>
