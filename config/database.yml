@@ -83,4 +83,4 @@ production:
   <<: *default
   database: elshamadan_production
   username: elshamadan
-  password: <%= ENV["ELSHAMADAN_DATABASE_PASSWORD"] %>
+  password: <%= ENV['DATABASE_URL'] %>
