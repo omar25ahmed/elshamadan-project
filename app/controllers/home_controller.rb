@@ -59,6 +59,14 @@ class HomeController < ApplicationController
         image: "members/Mostafa-Doma.jpeg",
       },
       {
+        name: "Maryam Mustafa",
+        image: "members/Maryam-Mustafa.jpeg",
+      },
+      {
+        name: "Abdallah Alaa",
+        image: "members/Abdallah-Alaa.jpeg",
+      },
+      {
         name: "Farag Adel",
         image: "members/Farag-Adel.jpeg",
       },
