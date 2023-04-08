@@ -1,0 +1,57 @@
+
+<div class="container mx-auto h-full my-20">
+  <h1 class="text-4xl font-bold mb-4 text-white text-center my-5">Meat Our Team</h1>
+  <div class="swiper-container mySwiper mx-auto">
+    <div class="swiper-wrapper members">
+      <% @members.each do |member| %>
+        <div class="swiper-slide">
+          <div class="flex flex-col justify-center items-center w-[70vw] md:w-[20vw] mx-auto my-8">
+            <div style="background-image: url('<%= asset_path(member[:image]) %>'); background-size: cover; background-position: top;"
+              class="bg-gray-300 h-[40vh] w-full rounded-lg shadow-md bg-cover bg-center"></div>
+            <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
+              <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800"><%= member[:name] %></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- Navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+<script>
+  var swiperMembers = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      350: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
