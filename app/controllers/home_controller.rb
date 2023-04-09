@@ -16,11 +16,11 @@ class HomeController < ApplicationController
       },
       {
         name: "Yasser Bahaa",
-        image: "members/Yasser-Bahaa.jpeg",
+        image: "members/Yasser-Bahaa-2.jpeg",
       },
       {
-        name: "Habiba Hesham",
-        image: "members/Habiba-Hesham.jpeg",
+        name: "Maryam Mohammed",
+        image: "members/Maryam-Mohammed.jpeg",
       },
       {
         name: "Ahmed Emad",
@@ -39,16 +39,16 @@ class HomeController < ApplicationController
         image: "members/Manar-Ahmed.jpeg",
       },
       {
-        name: "Maryam Mohammed",
-        image: "members/Maryam-Mohammed.jpeg",
-      },
-      {
         name: "Omar Ragheb",
         image: "members/Omar-Ragheb.jpeg",
       },
       {
         name: "Nada Hassan",
         image: "members/Nada-Hassan.jpeg",
+      },
+      {
+        name: "Habiba Hesham",
+        image: "members/Habiba-Hesham.jpeg",
       },
       {
         name: "Hager Mustafa",
