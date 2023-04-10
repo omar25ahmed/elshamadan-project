@@ -6,8 +6,7 @@
       <% @members.each do |member| %>
         <div class="swiper-slide">
           <div class="flex flex-col justify-center items-center w-[70vw] md:w-[20vw] mx-auto my-8">
-            <div style="background-image: url('<%= asset_path(member[:image]) %>'); background-size: cover; background-position: top;"
-              class="bg-gray-300 h-[40vh] w-full rounded-lg shadow-md bg-cover bg-center"></div>
+            <%= image_tag member[:image], class: "bg-gray-300 h-[40vh] w-full rounded-lg shadow-md bg-cover bg-center object-cover object-top	"%>
             <div class="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
               <div class="py-2 text-center font-bold uppercase tracking-wide text-gray-800"><%= member[:name] %></div>
             </div>
