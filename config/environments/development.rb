@@ -69,15 +69,14 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   config.action_mailer.delivery_method = :smtp
-  host = 'example.com' # replace with your own url
-  config.action_mailer.default_url_options = { host: }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
     port: 587,
-    user_name: '<gmail_username>',
-    password: '<gmail_password>',
+    user_name: Rails.application.credentials.gmail.username,
+    password: Rails.application.credentials.gmail.password,
     authentication: 'plain',
     enable_starttls_auto: true
   }
