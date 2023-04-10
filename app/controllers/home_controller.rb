@@ -26,87 +26,87 @@ class HomeController < ApplicationController
     [
       {
         name: "Suhaila Mahmoud",
-        image: "members/suhaila-mahmoud.jpeg",
+        image: "members/suhaila-mahmoud.jpg",
       },
       {
         name: "Yasser Bahaa",
-        image: "members/Yasser-Bahaa-2.jpeg",
+        image: "members/Yasser-Bahaa-2.jpg",
       },
       {
         name: "Maryam Mohammed",
-        image: "members/Maryam-Mohammed.jpeg",
+        image: "members/Maryam-Mohammed.jpg",
       },
       {
         name: "Ahmed Emad",
-        image: "members/Ahmed-Emad.jpeg",
+        image: "members/Ahmed-Emad.jpg",
       },
       {
         name: "Mahmoud Emad",
-        image: "members/Mahmoud-Emad.jpeg",
+        image: "members/Mahmoud-Emad.jpg",
       },
       {
         name: "Maha Mohammed",
-        image: "members/Maha-Mohammed.jpeg",
+        image: "members/Maha-Mohammed.jpg",
       },
       {
         name: "Manar Ahmed",
-        image: "members/Manar-Ahmed.jpeg",
+        image: "members/Manar-Ahmed.jpg",
       },
       {
         name: "Omar Ragheb",
-        image: "members/Omar-Ragheb.jpeg",
+        image: "members/Omar-Ragheb.jpg",
       },
       {
         name: "Nada Hassan",
-        image: "members/Nada-Hassan.jpeg",
+        image: "members/Nada-Hassan.jpg",
       },
       {
         name: "Habiba Hesham",
-        image: "members/Habiba-Hesham.jpeg",
+        image: "members/Habiba-Hesham.jpg",
       },
       {
         name: "Hager Mustafa",
-        image: "members/Hager-Mustafa.jpeg",
+        image: "members/Hager-Mustafa.jpg",
       },
       {
         name: "Mostafa Doma",
-        image: "members/Mostafa-Doma.jpeg",
+        image: "members/Mostafa-Doma.jpg",
       },
       {
         name: "Maryam Mustafa",
-        image: "members/Maryam-Mustafa.jpeg",
+        image: "members/Maryam-Mustafa.jpg",
       },
       {
         name: "Abdallah Alaa",
-        image: "members/Abdallah-Alaa.jpeg",
+        image: "members/Abdallah-Alaa.jpg",
       },
       {
         name: "Farag Adel",
-        image: "members/Farag-Adel.jpeg",
+        image: "members/Farag-Adel.jpg",
       },
       {
         name: "Ahmed Wagih",
-        image: "members/Ahmed-Wagih.jpeg",
+        image: "members/Ahmed-Wagih.jpg",
       },
       {
         name: "Rahma Mohsen",
-        image: "members/Rahma-Mohsen.jpeg",
+        image: "members/Rahma-Mohsen.jpg",
       },
       {
         name: "Fatma Sameh",
-        image: "members/Fatma-Sameh.jpeg",
+        image: "members/Fatma-Sameh.jpg",
       },
       {
         name: "Amal Fares",
-        image: "members/Amal-Fares.jpeg",
+        image: "members/Amal-Fares.jpg",
       },
       {
         name: "Ali Gamal",
-        image: "members/Ali-Gamal.jpeg",
+        image: "members/Ali-Gamal.jpg",
       },
       {
         name: "Rana Ahmed",
-        image: "members/Rana-Ahmed.jpeg",
+        image: "members/Rana-Ahmed.jpg",
       },
     ]
   end
