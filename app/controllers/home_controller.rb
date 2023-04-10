@@ -26,7 +26,7 @@ class HomeController < ApplicationController
     [
       {
         name: "Suhaila Mahmoud",
-        image: "members/Suhaila-Mahmoud.jpeg",
+        image: "members/suhaila-mahmoud.jpeg",
       },
       {
         name: "Yasser Bahaa",
