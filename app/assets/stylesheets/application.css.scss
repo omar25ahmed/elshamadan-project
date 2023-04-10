@@ -30,15 +30,6 @@ body {
   height: 80vh;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
 
 /* .swiper-slide img {
   display: block;
@@ -91,10 +82,28 @@ body {
   right: 0;
 }
 
+.background-about {
+  content: '';
+  position: absolute;
+  background: url('about/about-showcase.png');
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .choco {
   position: relative;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.self-intro {
+  position: relative;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 50vh;
 }
 
 .swiper-1 {
@@ -109,12 +118,33 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: auto;
   border-radius: 100%;
+  text-align: center;
+}
+
+.vision-list {
+  background-image: url('about/vision-2.png');
+  background-size: cover;
+}
+
+.swiper-container {
+  position: relative;
 }
 
 .contact-info {
   background: url('./contact/contact-bg.jpg');
   background-size: cover;
+  }
+
+.member {
+  width: 270px;
+  padding: 50px;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+.member img {
+  height: 250px;
 }
