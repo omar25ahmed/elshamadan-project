@@ -3,21 +3,22 @@
   <h3 class="text-4xl font-extrabold text-white mb-5">Discover our brands</h3>
   <div class="swiper-1 mySwiper-1">
     <div class="swiper-wrapper">
-      <% (1..3).each do |i| %>
+      <% (1..8).each do |i| %>
         <a href="#" class="swiper-slide">
-          <%= image_tag("brands/#{i}.png", class: "") %>
+          <%= image_tag("brands/#{i}.png",style: "background-color: #{generate_color(i.to_s)}", class: "") %>
         </a>
       <% end %>
     </div>
   </div>
 
 </div>
-  <script>
-    var swiper1 = new Swiper(".mySwiper-1", {
-      effect: "cards",
-      grabCursor: true,
-      cardsEffect: {
-        perSlideOffset: 20,
-      },
-    });
-  </script>
+
+<script>
+  var swiper1 = new Swiper(".mySwiper-1", {
+    effect: "cards",
+    grabCursor: true,
+    cardsEffect: {
+      perSlideOffset: 20,
+    },
+  });
+</script>

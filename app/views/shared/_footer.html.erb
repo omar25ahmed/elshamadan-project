@@ -3,20 +3,20 @@
     <div class="flex justify-center items-center gap-5">
       <div class="flex flex-col items-center">
         <h6 class="text-white font-bold text-lg mb-4 border-b-4 border-white text-center w-[150px]">About</h6>
-        <p><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Vision</a></p>
-        <p><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Mission</a></p>
+        <p><%= link_to "Vision", about_path(anchor: "vision"), class: "text-gray-400 hover:text-white transition-colors duration-300" %></p>
+        <p><%= link_to "Mission", about_path(anchor: "mission"), class: "text-gray-400 hover:text-white transition-colors duration-300" %></p>
       </div>
       <div class="flex flex-col items-center">
         <h6 class="text-white font-bold text-lg mb-4 border-b-4 border-white text-center w-[150px]">Help</h6>
-        <p><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Contact us</a></p>
-        <p><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Call us on "01xxxxxxxxx"</a></p>
+        <p><%= link_to "Contact us", contact_path, class: "text-gray-400 hover:text-white transition-colors duration-300" %></p>
+        <p><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Call us on "01014203485"</a></p>
       </div>
     </div>
     <div class="text-gray-400 w-[80vw] md:w-[20vw] flex flex-col items-center justify:center gap-2 md:border-l-4 md:pl-10">
       <h6>
-        <%= link_to icon('fa-brands', 'facebook'), '#', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl mr-2' %>
-        <%= link_to icon('fa-brands', 'instagram'), '#', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl mr-2' %>
-        <%= link_to icon('fa-brands', 'tiktok'), '#', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl' %>
+        <%= link_to icon('fa-brands', 'facebook'), 'https://www.facebook.com/Bisquad-%D8%A8%D9%8A%D8%B3%D9%83%D9%88%D8%A7%D8%AF-105717317769316', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl mr-2' %>
+        <%= link_to icon('fa-brands', 'instagram'), 'https://www.instagram.com/bisquadmccu/', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl mr-2' %>
+        <%= link_to icon('fa-brands', 'tiktok'), 'https://www.tiktok.com/@bisquad23', target: '_blank', class: 'text-gray-400 hover:text-white transition-colors duration-300 text-xl' %>
       </h6>
       <p class="text-md">We are bisquad a grad project that develop a marketing plan that includes a range of tactics to reach potential customers, including social media marketing, content marketing, and search engine optimization.</p>
       <p class="text-gray-400 text-sm">© 2023 Bisquad. All rights reserved.</p>
