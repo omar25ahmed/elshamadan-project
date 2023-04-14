@@ -79,9 +79,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
 # authentication devise
 gem 'devise'
-
 
 # dashboard admin
 gem 'trestle'
@@ -89,3 +89,5 @@ gem 'trestle-auth'
 
 # active storage validation
 gem 'active_storage_validations', '~> 1.0', '>= 1.0.3'
+
+gem "dockerfile-rails", ">= 1.2", :group => :development
