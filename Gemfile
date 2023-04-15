@@ -79,6 +79,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+# authentication devise
+gem 'devise'
 
-# rails admin
 
+# active admin
+gem 'activeadmin', '~> 2.13', '>= 2.13.1'
