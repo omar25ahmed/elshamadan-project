@@ -84,4 +84,3 @@ gem 'devise'
 
 
 # active admin
-gem 'activeadmin', '~> 2.13', '>= 2.13.1'
