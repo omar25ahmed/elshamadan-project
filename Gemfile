@@ -83,4 +83,6 @@ end
 gem 'devise'
 
 
-# active admin
+# dashboard admin
+gem 'trestle'
+gem 'trestle-auth'
