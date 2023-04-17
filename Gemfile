@@ -33,6 +33,9 @@ gem "font-awesome-sass", "~> 6.3.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# aws s3
+gem 'aws-sdk-s3', require: false
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -76,3 +79,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+# authentication devise
+gem 'devise'
+
+
+# dashboard admin
+gem 'trestle'
+gem 'trestle-auth'
