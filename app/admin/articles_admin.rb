@@ -17,6 +17,10 @@ Trestle.resource(:articles) do
     tab :article do
       text_field :title
       text_area :body
+      form_group :cover do
+        concat image_tag(article.cover.url) if article.cover.attached?
+        raw_file_field :cover
+      end
     end
   end
 
