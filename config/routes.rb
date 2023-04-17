@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'home#contact'
   post 'contact_index', to: 'home#contact'
   get 'about', to: 'home#about'
+
+  # products
+  get 'products', to: 'products#index'
 end
