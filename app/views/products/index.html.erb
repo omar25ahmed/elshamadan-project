@@ -6,12 +6,12 @@
     </p>
     <div class="flex justify-center gap-10 flex-wrap">
       <% @brands.each do |brand| %>
-        <div class="flex flex-col items-center">
+        <a href='brands/<%= brand.id %>' class="flex flex-col items-center">
           <div class="w-64 h-64 flex justify-center items-center">
             <%= image_tag brand.logo.url, class: "w-64 h-64 object-contain" %>
           </div>
           <h2 class="text-2xl font-bold text-white mt-4"><%= brand.name %></h2>
-        </div>
+        </a>
       <% end %>
     </div>
   </div>

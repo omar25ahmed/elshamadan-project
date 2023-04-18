@@ -9,4 +9,7 @@ Rails.application.routes.draw do
 
   # products
   get 'products', to: 'products#index'
+
+  # brands
+  resources :brands, only: [:show]
 end
