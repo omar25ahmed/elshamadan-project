@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'about', to: 'home#about'
 
   # products
-  get 'products', to: 'products#index'
+  resources :products, only: [:index]
 
   # brands
   resources :brands, only: [:show]

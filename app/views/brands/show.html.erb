@@ -1,32 +1,35 @@
-<div class="">
-      <div class="container mx-auto flex justify-center flex-col">
-        <div class="basis-1/2 flex flex-col justify-center items-center">
-          <h1 class="text-4xl font-bold mb-4 text-white text-center my-5"><%= @brand.name %></h1>
-          <p class="text-lg leading-7 p-6 text-white text-center my-5 w-5/6">
-            <%= @brand.description %>
-          </p>
-        </div>
-        <div class="">
-          <%= image_tag @brand.logo, class: "w-full" %>
-        </div>
+<div class="my-20">
+  <div class="">
+    <div class="container mx-auto flex justify-center flex-col">
+      <div class="basis-1/2 flex flex-col justify-center items-center">
+      <div class="w-80 h-80 object-contain">
+        <%= image_tag @brand.logo, class: "w-full" %>
+      </div>
+        <h1 class="text-4xl font-bold mb-4 text-white text-center my-10"><%= @brand.name %></h1>
+        <p class="text-lg leading-7 p-6 text-white text-center my-5 w-5/6">
+          <%= @brand.description %>
+        </p>
       </div>
     </div>
+  </div>
 
-<% @products.each_with_index do |product, index| %>
-  <% odd = "container mx-auto flex justify-center flex-col-reverse md:flex-row" %>
-  <% even = "container mx-auto flex justify-center flex-col-reverse md:flex-row-reverse" %>
-    <div class="custom-border">
-      <div class="<%= index.odd? ? odd : even %>" >
-        <div class="basis-1/2 flex flex-col justify-center items-center pb-8 md:items-start" >
-          <h1 class="text-4xl font-bold mb-4 text-white text-center my-5"><%= product.name %></h1>
-          <p class="text-lg leading-7 text-white my-5 w-5/6">
-            <%= product.description %>
-          </p>
-          <%= link_to '<span class="inline-flex items-center justify-center px-4 py-2 text-base font-small test-sm text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Buy now<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>'.html_safe, root_path, class: "inline-flex items-center justify-center px-4 py-2 text-base font-small text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4" %>
-        </div>
-        <div class="">
-          <%= image_tag product.thumbnail, class: "w-full h-full" %>
+  <% @products.each_with_index do |product, index| %>
+    <% odd = "container mx-auto flex justify-center items-center flex-col-reverse md:flex-row gap-5" %>
+    <% even = "container mx-auto flex justify-center items-center flex-col-reverse md:flex-row-reverse gap-5" %>
+      <div class="custom-border md:w-1/2 mx-auto md:px-20">
+        <div class="<%= index.odd? ? odd : even %>" >
+          <div class="flex w-1/2 flex-col justify-center items-center pb-8 md:items-start" >
+            <h1 class="text-2xl font-bold text-white text-center my-1"><%= product.name %></h1>
+            <p class="text-sm leading-7 text-white text-center md:text-left my-5">
+              <%= product.description %>
+            </p>
+            <%= link_to '  <svg class="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bitcoin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"></path></svg>
+            Buy now!'.html_safe, root_path, class: "text-white bg-[#DD5121] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#e0430f]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2" %>
+          </div>
+          <div class="w-1/2 py-5 md:5">
+            <%= image_tag product.thumbnail, class: "md:w-64 md:h-64 object-contain" %>
+          </div>
         </div>
       </div>
-    </div>
-<% end %>
+  <% end %>
+</div>

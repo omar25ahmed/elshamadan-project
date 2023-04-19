@@ -1,17 +1,18 @@
 
-<div class="container mx-auto flex flex-col justify-center items-center my-10 gap-5">
-  <h3 class="text-4xl font-extrabold text-white mb-5">Discover our brands</h3>
-  <div class="swiper-1 mySwiper-1">
-    <div class="swiper-wrapper">
-      <% (1..8).each do |i| %>
-        <a href="#" class="swiper-slide">
-          <%= image_tag("brands/#{i}.png",style: "background-color: #{generate_color(i.to_s)}", class: "") %>
-        </a>
-      <% end %>
+<% if @brands.count > 0 %>
+  <div class="container mx-auto flex flex-col justify-center items-center my-10 gap-5">
+    <h3 class="text-4xl font-extrabold text-white mb-5">Discover our brands</h3>
+    <div class="swiper-1 mySwiper-1">
+      <div class="swiper-wrapper">
+        <% @brands.each do |brand| %>
+          <a href="<%= "/brands/#{brand.id}" %>" class="swiper-slide">
+            <%= image_tag(brand.logo.url,style: "background-color: #{generate_color(brand.id.to_s)}", class: "object-contain h-full w-full") %>
+          </a>
+        <% end %>
+      </div>
     </div>
   </div>
-
-</div>
+<% end %>
 
 <script>
   var swiper1 = new Swiper(".mySwiper-1", {
