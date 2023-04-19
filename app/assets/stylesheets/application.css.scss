@@ -148,3 +148,10 @@ body {
 .member img {
   height: 250px;
 }
+
+.custom-border {
+  border-top: 2px;
+	border-bottom: 0;
+	border-style: solid;
+	border-image: linear-gradient(to right, #244f79, #000, #244f79) 72% 43% 33% 8%;
+}

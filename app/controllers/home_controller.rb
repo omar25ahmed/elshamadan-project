@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @brands = Brand.all
   end
 
   def contact
