@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @brands = Brand.all
+    @brands = Brand.limit(4).order(created_at: :desc)
+    @articles = Article.limit(4).order(created_at: :desc)
   end
 
   def contact
