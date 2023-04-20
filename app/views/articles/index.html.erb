@@ -1,0 +1,12 @@
+<div dir="rtl" class="container mx-auto flex flex-wrap flex-col items-center justify-center gap-20 py-20">
+  <h1 dir="" class="text-4xl font-bold text-gray-900 dark:text-white">Our Articles</h1>
+  <% @articles.each do |article| %>
+    <a href="<%= "articles/#{article.id}" %>" class="flex flex-col md:w-[50vw] w-[80vw] items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-5xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <%= image_tag article.cover.url, class: "object-cover w-full rounded-t-lg h-50 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" %>
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= article.title %></h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><%= sanitize(article.body, tags: [], separator: ' ').truncate(200) %></p>
+        </div>
+    </a>
+  <% end %>
+</div>

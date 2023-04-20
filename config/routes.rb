@@ -12,4 +12,7 @@ Rails.application.routes.draw do
 
   # brands
   resources :brands, only: [:show]
+
+  # articles
+  resources :articles, only: [:index, :show]
 end
