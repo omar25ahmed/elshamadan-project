@@ -23,10 +23,6 @@ Trestle.resource(:products) do
     number_field :package_price
     # belongs_to :brand, collection: Brand.all
     select :brand_id, Brand.all.map { |brand| [brand.name, brand.id] }
-    row do
-      col { datetime_field :updated_at }
-      col { datetime_field :created_at }
-    end
     form_group :thumbnail do
       concat image_tag(product.thumbnail.url) if product.thumbnail.attached?
       raw_file_field :thumbnail
