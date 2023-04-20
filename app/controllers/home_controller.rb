@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @brands = Brand.limit(4).order(created_at: :desc)
-    @articles = Article.limit(4).order(created_at: :desc)
+    @brands = Brand.limit(5).order(created_at: :asc)
+    @articles = Article.limit(4).order(created_at: :asc)
   end
 
   def contact
