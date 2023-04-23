@@ -1,36 +1,43 @@
-<div class="swiper-slide">
-  <div class="background-about"></div>
-  <div class="self-intro flex items-center justify-center md:justify-start">
-    <div class="bg-gray-900 text-white p-8 rounded-lg max-w-md max-h-[260px]-md md:ml-40 w-80 md:w-full"> <h1 class="text-3xl font-bold mb-4">Who are we?</h1> <p class="text-lg leading-6 text-left">We are Bisquad, a team of creative and experienced marketers who love helping businesses like Shamadan succeed. Our goal is to create effective marketing campaigns that drive sales and help our clients achieve their business objectives.</p> </div>
-  </div>
-</div>
-
-<div class="bg-gradient-to-r from-[#F0F0F0] to-[#FAFAFA] vision-container" id="vision">
-  <div class="container mx-auto flex justify-center vision h-100 flex-col md:flex-row">
-    <div class="hidden md:block">
-      <%= image_tag "about/vision-1.png", class: "w-full h-full" %>
-    </div>
-    <div class="basis-1/2 vision-list">
-      <div class="flex flex-col justify-center items-center w-full h-full">
-        <h1 class="text-4xl font-bold mb-4 text-center my-5">Our Vision</h1>
-        <p class="text-lg leading-7 bg-white p-6 rounded-lg shadow-lg text-gray-700 my-5 w-5/6">
-          "The exclusivity will be for Shamadan's Wafer, especially the Crispy Wafer in Egypt, and it should be the first choice for the audience when thinking about Wafer in general and Crispy Wafer specifically, while considering environmental preservation."
+<div dir="ltr">
+  <div class="swiper-slide">
+    <div class="background-about"></div>
+    <div class="self-intro flex items-center justify-center md:justify-start">
+      <div class="bg-gray-900 text-white p-8 rounded-lg max-w-md max-h-[260px]-md md:ml-40 w-80 md:w-full">
+        <h1 class="text-3xl font-bold mb-4"><%= t("about.hero_section.about_us.title") %></h1>
+        <p class="text-lg leading-6 text-left">
+          <%= t("about.hero_section.about_us.description") %>
         </p>
       </div>
     </div>
   </div>
-</div>
 
-<div class="bg-[#145474]">
-  <div class="container mx-auto flex justify-center flex-col md:flex-row" id="mission">
-    <div class="basis-1/2 flex flex-col justify-center items-center">
-      <h1 class="text-4xl font-bold mb-4 text-white text-center my-5">Our Mission</h1>
-      <p class="text-lg leading-7 bg-white p-6 rounded-lg shadow-lg text-gray-700 my-5 w-5/6">
-        "Announcing a food product as a snack for different segments of the public and continuously developing it to meet the needs of the public, in addition to establishing a positive image of the company in the public's mind."
-      </p>
+  <div class="bg-gradient-to-r from-[#F0F0F0] to-[#FAFAFA] vision-container" id="vision">
+    <div class="container mx-auto flex justify-center vision h-100 flex-col md:flex-row">
+      <div class="hidden md:block">
+        <%= image_tag "about/vision-1.png", class: "w-full h-full" %>
+      </div>
+      <div class="basis-1/2 vision-list">
+        <div class="flex flex-col justify-center items-center w-full h-full">
+          <h1 class="text-4xl font-bold mb-4 text-center my-5"><%= t("about.hero_section.vision.title") %></h1>
+          <p class="text-lg leading-7 bg-white p-6 rounded-lg shadow-lg text-gray-700 my-5 w-5/6">
+            <%= t("about.hero_section.vision.description") %>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="hidden md:block">
-      <%= image_tag "about/mission.png", class: "w-full h-full" %>
+  </div>
+
+  <div class="bg-[#145474]">
+    <div class="container mx-auto flex justify-center flex-col md:flex-row" id="mission">
+      <div class="basis-1/2 flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold mb-4 text-white text-center my-5"><%= t("about.hero_section.mission.title") %></h1>
+        <p class="text-lg leading-7 bg-white p-6 rounded-lg shadow-lg text-gray-700 my-5 w-5/6">
+          <%= t("about.hero_section.mission.description") %>
+        </p>
+      </div>
+      <div class="hidden md:block">
+        <%= image_tag "about/mission.png", class: "w-full h-full" %>
+      </div>
     </div>
   </div>
 </div>

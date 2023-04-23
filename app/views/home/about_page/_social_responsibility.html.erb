@@ -1,41 +1,43 @@
 <div class="container mx-auto h-full my-20">
-  <h1 class="text-4xl font-bold mb-4 text-white text-center my-5">Sustainability & Social Responsibility</h1>
-  <p class="text-xl text-white text-center md:text-left p-5">
-    Bisquad is not just about creating ads and make promotions, but it is also committed to being a socially responsible group. We believe that as a business, we have a responsibility to give back to the community and help those who are less fortunate.
+  <h1 class="text-4xl font-bold mb-4 text-white text-center my-5">
+    <%= t("about.social_responsibility.title") %>
+  </h1>
+  <p class="text-xl text-white text-center md:text-left md:rtl:text-right p-5">
+    <%= t("about.social_responsibility.description_1") %>
   </p>
   <br>
   <p class="text-xl text-white hidden md:block p-5">
-    Recently, our marketing group organized several events to promote social responsibility and give back to the community. One of these events was a fun day with the orphans. We spent the day playing games, doing arts and crafts, and sharing our Shamadan chocolates with the children. It was a great opportunity to bring joy and happiness to these children who may not have had the chance to experience such a fun day.
+    <%= t("about.social_responsibility.description_2") %>
   </p>
 
   <div class="flex justify-center items-center gap-20 py-10 flex-col md:flex-row">
     <div class="flex justify-center items-center flex-col">
       <%= image_tag "about/resala-day.jpg", class: "h-80 w-96 rounded" %>
       <h3 class="text-white font-bold underline text-lg text-center">
-        Resala package day
+        <%= t("about.social_responsibility.events.event_1.title") %>
       <h3>
       <p class="w-80 md:w-[15vw] text-center text-white text-sm">
-        We have helped Resala to package their products and make them ready to be shipped.
+        <%= t("about.social_responsibility.events.event_1.description") %>
       </p>
     </div>
 
     <div class="flex justify-center items-center flex-col">
       <%= image_tag "about/pyramids-day.jpg", class: "h-80 w-96 rounded" %>
       <h3 class="text-white font-bold underline text-lg text-center">
-        Pyramids day
+        <%= t("about.social_responsibility.events.event_2.title") %>
       <h3>
       <p class="w-80 md:w-[15vw] text-center text-white text-sm">
-        We have gone to the pyramids to welcome the tourists and make them taste our products.
+        <%= t("about.social_responsibility.events.event_2.description") %>
       </p>
     </div>
 
     <div class="flex justify-center items-center flex-col">
       <%= image_tag "about/school-day.jpg", class: " h-80 w-96 rounded" %>
       <h3 class="text-white font-bold underline text-lg text-center">
-        Primary school day
+        <%= t("about.social_responsibility.events.event_3.title") %>
       <h3>
       <p class="w-80 md:w-[15vw] text-center text-white text-sm">
-        In Maady primary school we have done a fun day to play with students and give them Shamadan chocolate.
+        <%= t("about.social_responsibility.events.event_3.description") %>
       </p>
     </div>
   </div>

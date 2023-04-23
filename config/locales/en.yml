@@ -31,3 +31,115 @@
 
 en:
   hello: "Hello world"
+  navbar:
+    home: Home
+    about: About
+    articles: Articles
+    products: Products
+    contact: Contact
+  footer:
+    about: About
+    help: Help
+    vision: Vision
+    mission: Mission
+    contact: Contact us
+    call_us: Call us on "01014203485"
+    description: We are bisquad a grad project that develop a marketing plan that includes a range of tactics to reach potential customers, including social media marketing, content marketing, and search engine optimization.
+    copyright: © 2023 Bisquad. All rights reserved.
+
+  home:
+    swiper:
+      slide_1:
+        title: "In <span style='color: #DD5121'>Bisquad</span>, we invest in your success"
+        description: "In Bisquad, we specialize in markets that require creativity. Our team of experts creates impactful ads and manages your brand with expertise to help you stand out from your competitors."
+        link: <span class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>
+      slide_2:
+        title: Regain the <mark class="px-2 text-white bg-[#DD5121] rounded">control</mark> of your audience
+        description: Bisquad helps you control your audience through data-driven strategies that target your ideal customers, maximize reach, and drive engagement. Gain valuable insights and make data-driven decisions to achieve long-term success.
+      slide_3:
+        title: <span class="text-transparent bg-clip-text bg-gradient-to-r to-orange-600 from-orange-400">Better Promotions</span> for your product.
+        description: Bisquad creates personalized marketing strategies that optimize campaigns and drive engagement. With our expertise and data-driven approach, we can take your promotions to the next level and help you achieve your business goals.
+      slide_4:
+        title: We invest in the <span class="underline underline-offset-3 decoration-8 decoration-[#DD5121]">Market Research</span>
+        description: Bisquad's market research approach provides valuable insights into your target audience and identifies opportunities for your business to stand out.
+    articles:
+      title: "Our Articles"
+    about_us:
+      title: "About Us"
+      description_html: We believe that effective marketing is all about understanding your audience and delivering the right message at the right time.<br>That's why we take a data-driven approach to marketing, using a variety of tools and techniques to analyze audience behavior and optimize our campaigns for maximum impact.
+      link_html: '<span class="inline-flex items-center justify-center px-4 py-2 text-base font-small test-sm text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>'
+    brands:
+      title: "Discover our Brands"
+
+  about:
+    hero_section:
+      about_us:
+        title: Who are we?
+        description: We are Bisquad, a team of creative and experienced marketers who love helping businesses like Shamadan succeed. Our goal is to create effective marketing campaigns that drive sales and help our clients achieve their business objectives.
+      vision:
+        title: Our Vision
+        description: "'The exclusivity will be for Shamadan's Wafer, especially the Crispy Wafer in Egypt, and it should be the first choice for the audience when thinking about Wafer in general and Crispy Wafer specifically, while considering environmental preservation.'"
+      mission:
+        title: Our Mission
+        description: "'Announcing a food product as a snack for different segments of the public and continuously developing it to meet the needs of the public, in addition to establishing a positive image of the company in the public's mind.'"
+    members:
+      title: Meet our team
+    process:
+      title: Our Process
+      market_research:
+        title: Market Research
+        description: Gather information about target market, customer needs, and competition.
+      create_plan:
+        title: Create a plan
+        description: Develop marketing goals, audience, messaging, and tactics.
+      implement_promotions:
+        title: Implement promotions
+        description: Execute various marketing activities to create awareness, interest and conversions.
+      manage_feedback:
+        title: Manage feedback
+        description: Collect and analyze feedback to improve marketing efforts and better serve customers.
+    social_responsibility:
+      title: Sustainability & Social Responsibility
+      description_1: Bisquad is not just about creating ads and make promotions, but it is also committed to being a socially responsible group. We believe that as a business, we have a responsibility to give back to the community and help those who are less fortunate.
+      description_2: Recently, our marketing group organized several events to promote social responsibility and give back to the community. One of these events was a fun day with the orphans. We spent the day playing games, doing arts and crafts, and sharing our Shamadan chocolates with the children. It was a great opportunity to bring joy and happiness to these children who may not have had the chance to experience such a fun day.
+      events:
+        event_1:
+          title: Resala package day
+          description: We have helped Resala to package their products and make them ready to be shipped.
+        event_2:
+          title: Pyramids day
+          description: We have gone to the pyramids to welcome the tourists and make them taste our products.
+        event_3:
+          title: Primary school day
+          description: In Maady primary school we have done a fun day to play with students and give them Shamadan chocolate.
+
+  products:
+    title: Our Products
+    description: At Bisquad, we're proud to present the products of the companies we do marketing for. By showcasing these products to a wider audience, we can increase product awareness and help our clients reach new customers. Our team is dedicated to creating effective marketing campaigns that highlight the unique features and benefits of each product.
+    buy_now_html: '<svg class="w-4 h-4 mr-2 -ml-1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="bitcoin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.1-111 248-248 248S8 392.1 8 256 119 8 256 8s248 111 248 248zm-141.7-35.33c4.937-32.1-20.19-50.74-54.55-62.57l11.15-44.7-27.21-6.781-10.85 43.52c-7.154-1.783-14.5-3.464-21.8-5.13l10.93-43.81-27.2-6.781-11.15 44.69c-5.922-1.349-11.73-2.682-17.38-4.084l.031-.14-37.53-9.37-7.239 29.06s20.19 4.627 19.76 4.913c11.02 2.751 13.01 10.04 12.68 15.82l-12.7 50.92c.76 .194 1.744 .473 2.829 .907-.907-.225-1.876-.473-2.876-.713l-17.8 71.34c-1.349 3.348-4.767 8.37-12.47 6.464 .271 .395-19.78-4.937-19.78-4.937l-13.51 31.15 35.41 8.827c6.588 1.651 13.05 3.379 19.4 5.006l-11.26 45.21 27.18 6.781 11.15-44.73a1038 1038 0 0 0 21.69 5.627l-11.11 44.52 27.21 6.781 11.26-45.13c46.4 8.781 81.3 5.239 95.99-36.73 11.84-33.79-.589-53.28-25-65.99 17.78-4.098 31.17-15.79 34.75-39.95zm-62.18 87.18c-8.41 33.79-65.31 15.52-83.75 10.94l14.94-59.9c18.45 4.603 77.6 13.72 68.81 48.96zm8.417-87.67c-7.673 30.74-55.03 15.12-70.39 11.29l13.55-54.33c15.36 3.828 64.84 10.97 56.85 43.03z"></path></svg>Buy now!'
+
+  articles:
+    title: Our Articles
+
+  contact:
+    title: Contact Us
+    subtitle: GET IN TOUCH WITH US
+    description: Thank you for your interest in our company. We would love to hear from you and answer any questions you may have. Please feel free to get in touch with us using the contact form or the information provided below.
+    form:
+      name:
+        label: Your Name
+        placeholder: John Doe
+      email:
+        label: Your Email
+        placeholder: johndoe@example.com
+      phone:
+        label: Your Phone
+        placeholder: '12345678910'
+      message:
+        label: Your Message
+        placeholder: 'Write anything you want to tell us...'
+      submit:
+        label: Send Message
+    address:
+      title: Contact Information
+      content_html: '- Address: faculty of mass-communication Cairo University<br/> - Phone: (+20) 0101-420-3485 <br/> - Email: bisquadGroup@gmail.com'
