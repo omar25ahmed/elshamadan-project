@@ -1,13 +1,11 @@
 <div class="bg-gray-800 my-10">
   <div class="container mx-auto p-10 flex flex-col md:flex-row items-center justify-center md:gap-20">
     <div class="md:w-[30vw] order-last md:order-first text-center md:text-left">
-      <h4 class="text-4xl font-extrabold text-white mb-3">About us</h4>
+      <h4 class="text-4xl font-extrabold text-white mb-3"><%= t('home.about_us.title') %></h4>
       <p class="text-white text-xl mb-5 mr-0">
-        We believe that effective marketing is all about understanding your audience and delivering the right message at the right time.
-        <br>
-        That's why we take a data-driven approach to marketing, using a variety of tools and techniques to analyze audience behavior and optimize our campaigns for maximum impact.
+        <%= t('home.about_us.description_html') %>
       </p>
-      <%= link_to '<span class="inline-flex items-center justify-center px-4 py-2 text-base font-small test-sm text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>'.html_safe, about_path, class: "inline-flex items-center justify-center px-4 py-2 text-base font-small text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4" %>
+      <%= link_to t('home.about_us.link_html'), about_path, class: "inline-flex items-center justify-center px-4 py-2 text-base font-small text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4" %>
     </div>
     <div class="md:w-[30vw]">
       <%= image_tag "select-food.svg", class: "w-full h-[300px]" %>

@@ -31,13 +31,42 @@
 
 en:
   hello: "Hello world"
+  navbar:
+    home: Home
+    about: About
+    articles: Articles
+    products: Products
+    contact: Contact
+  footer:
+    about: About
+    help: Help
+    vision: Vision
+    mission: Mission
+    contact: Contact us
+    call_us: Call us on "01014203485"
+    description: We are bisquad a grad project that develop a marketing plan that includes a range of tactics to reach potential customers, including social media marketing, content marketing, and search engine optimization.
+    copyright: © 2023 Bisquad. All rights reserved.
+
   home:
     swiper:
       slide_1:
-        title: "In <span class='text-[#DD5121]'>Bisquad</span>, we invest in your success"
+        title: "In <span style='color: #DD5121'>Bisquad</span>, we invest in your success"
         description: "In Bisquad, we specialize in markets that require creativity. Our team of experts creates impactful ads and manages your brand with expertise to help you stand out from your competitors."
         link: <span class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>
       slide_2:
         title: Regain the <mark class="px-2 text-white bg-[#DD5121] rounded">control</mark> of your audience
         description: Bisquad helps you control your audience through data-driven strategies that target your ideal customers, maximize reach, and drive engagement. Gain valuable insights and make data-driven decisions to achieve long-term success.
-
+      slide_3:
+        title: <span class="text-transparent bg-clip-text bg-gradient-to-r to-orange-600 from-orange-400">Better Promotions</span> for your product.
+        description: Bisquad creates personalized marketing strategies that optimize campaigns and drive engagement. With our expertise and data-driven approach, we can take your promotions to the next level and help you achieve your business goals.
+      slide_4:
+        title: We invest in the <span class="underline underline-offset-3 decoration-8 decoration-[#DD5121]">Market Research</span>
+        description: Bisquad's market research approach provides valuable insights into your target audience and identifies opportunities for your business to stand out.
+    articles:
+      title: "Our Articles"
+    about_us:
+      title: "About Us"
+      description_html: We believe that effective marketing is all about understanding your audience and delivering the right message at the right time.<br>That's why we take a data-driven approach to marketing, using a variety of tools and techniques to analyze audience behavior and optimize our campaigns for maximum impact.
+      link_html: '<span class="inline-flex items-center justify-center px-4 py-2 text-base font-small test-sm text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>'
+    brands:
+      title: "Discover our Brands"

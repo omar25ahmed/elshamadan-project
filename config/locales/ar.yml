@@ -1,9 +1,15 @@
 ar:
   hello: "مرحبا بالعالم"
+  navbar:
+    home: الرئيسية
+    about: من نحن
+    articles: المقالات
+    products: المنتجات
+    contact: اتصل بنا
   home:
     swiper:
       slide_1:
-        title: في <span class="text-[#DD5121]">Bisquad</span>، نستثمر في نجاحك
+        title: 'في <span style="color: #DD5121">بيسكواد</span>، نستثمر في نجاحك'
         description: في Bisquad، نتخصص في الأسواق التي تتطلب الإبداع. يقوم فريقنا من الخبراء بإنشاء إعلانات ذات تأثير وإدارة علامتك التجارية بخبرة لمساعدتك في التميز عن منافسيك.
         link: اعرف المزيد
       slide_2:
