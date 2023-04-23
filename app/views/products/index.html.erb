@@ -12,7 +12,10 @@
           <div class="w-64 h-64 flex justify-center items-center">
             <%= image_tag brand.logo.url, class: "w-64 h-64 object-contain" %>
           </div>
-          <h2 class="text-2xl font-bold text-white mt-4"><%= brand.name %></h2>
+          <h2 class="text-2xl font-bold text-white mt-4"><%=
+            I18n.locale == :ar ? brand.name_ar : brand.name
+          %>
+          </h2>
         </a>
       <% end %>
     </div>
