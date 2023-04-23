@@ -10,7 +10,9 @@ class HomeController < ApplicationController
 
     @contact = contact_params
     ContactMailer.with(contact: @contact).new_contact_mailer.deliver_now
-    flash[:notice] = 'Contact form submitted, you will hear from us soon.'
+    # check the language and set the flash message
+    message = I18n.locale == :ar ? 'تم ارسال الرسالة بنجاح, سوف يتم التواصل معك قريبا' : 'Contact form submitted, you will hear from us soon.'
+    flash[:notice] = message
     redirect_to action: 'contact'
   end
 

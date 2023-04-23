@@ -70,3 +70,75 @@ en:
       link_html: '<span class="inline-flex items-center justify-center px-4 py-2 text-base font-small test-sm text-center text-white bg-[#DD5121] rounded-lg hover:hover:bg-[#e0430f] focus:ring-4">Learn more<svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></span>'
     brands:
       title: "Discover our Brands"
+
+  about:
+    hero_section:
+      about_us:
+        title: Who are we?
+        description: We are Bisquad, a team of creative and experienced marketers who love helping businesses like Shamadan succeed. Our goal is to create effective marketing campaigns that drive sales and help our clients achieve their business objectives.
+      vision:
+        title: Our Vision
+        description: "'The exclusivity will be for Shamadan's Wafer, especially the Crispy Wafer in Egypt, and it should be the first choice for the audience when thinking about Wafer in general and Crispy Wafer specifically, while considering environmental preservation.'"
+      mission:
+        title: Our Mission
+        description: "'Announcing a food product as a snack for different segments of the public and continuously developing it to meet the needs of the public, in addition to establishing a positive image of the company in the public's mind.'"
+    members:
+      title: Meet our team
+    process:
+      title: Our Process
+      market_research:
+        title: Market Research
+        description: Gather information about target market, customer needs, and competition.
+      create_plan:
+        title: Create a plan
+        description: Develop marketing goals, audience, messaging, and tactics.
+      implement_promotions:
+        title: Implement promotions
+        description: Execute various marketing activities to create awareness, interest and conversions.
+      manage_feedback:
+        title: Manage feedback
+        description: Collect and analyze feedback to improve marketing efforts and better serve customers.
+    social_responsibility:
+      title: Sustainability & Social Responsibility
+      description_1: Bisquad is not just about creating ads and make promotions, but it is also committed to being a socially responsible group. We believe that as a business, we have a responsibility to give back to the community and help those who are less fortunate.
+      description_2: Recently, our marketing group organized several events to promote social responsibility and give back to the community. One of these events was a fun day with the orphans. We spent the day playing games, doing arts and crafts, and sharing our Shamadan chocolates with the children. It was a great opportunity to bring joy and happiness to these children who may not have had the chance to experience such a fun day.
+      events:
+        event_1:
+          title: Resala package day
+          description: We have helped Resala to package their products and make them ready to be shipped.
+        event_2:
+          title: Pyramids day
+          description: We have gone to the pyramids to welcome the tourists and make them taste our products.
+        event_3:
+          title: Primary school day
+          description: In Maady primary school we have done a fun day to play with students and give them Shamadan chocolate.
+
+  products:
+    title: Our Products
+    description: At Bisquad, we're proud to present the products of the companies we do marketing for. By showcasing these products to a wider audience, we can increase product awareness and help our clients reach new customers. Our team is dedicated to creating effective marketing campaigns that highlight the unique features and benefits of each product.
+
+  articles:
+    title: Our Articles
+
+  contact:
+    title: Contact Us
+    subtitle: GET IN TOUCH WITH US
+    description: Thank you for your interest in our company. We would love to hear from you and answer any questions you may have. Please feel free to get in touch with us using the contact form or the information provided below.
+    form:
+      name:
+        label: Your Name
+        placeholder: John Doe
+      email:
+        label: Your Email
+        placeholder: johndoe@example.com
+      phone:
+        label: Your Phone
+        placeholder: '12345678910'
+      message:
+        label: Your Message
+        placeholder: 'Write anything you want to tell us...'
+      submit:
+        label: Send Message
+    address:
+      title: Contact Information
+      content_html: '- Address: faculty of mass-communication Cairo University<br/> - Phone: (+20) 0101-420-3485 <br/> - Email: bisquadGroup@gmail.com'

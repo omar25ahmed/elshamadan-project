@@ -18,7 +18,7 @@
          <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
             <div class="max-w-[570px] mb-12 lg:mb-0">
                <span class="block mb-4 text-base text-[#FF9925] font-semibold">
-               Contact Us
+                  <%= t('contact.title') %>
                </span>
                <h2
                   class="
@@ -32,10 +32,10 @@
                   xl:text-[40px]
                   "
                   >
-                  GET IN TOUCH WITH US
+                  <%= t('contact.subtitle') %>
                </h2>
                <p class="text-base text-white leading-relaxed">
-                  Thank you for your interest in our company. We would love to hear from you and answer any questions you may have. Please feel free to get in touch with us using the contact form or the information provided below.
+                  <%= t('contact.description') %>
                </p>
 
                <%= image_tag "contact/form.svg", class: "" %>
@@ -46,23 +46,23 @@
             <div class="bg-[#111827] relative rounded-lg p-8 sm:p-12 shadow-lg">
                <%= form_with url: contact_index_path, method: :post, local: true do |f| %>
                   <div class="mb-2">
-                     <%= label_tag :name, "Your Name", class: "block text-sm md:text-base font-medium text-white mb-2" %>
-                     <%= f.text_field :name, placeholder: "John Doe", class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
+                     <%= label_tag :name, t('contact.form.name.label'), class: "block text-sm md:text-base font-medium text-white mb-2" %>
+                     <%= f.text_field :name, placeholder: t('contact.form.name.placeholder'), class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
                   </div>
                   <div class="mb-2">
-                     <%= label_tag :email, "Your Email", class: "block text-sm md:text-base font-medium text-white mb-2" %>
-                     <%= f.email_field :email, placeholder: "johndoe@example.com", class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
+                     <%= label_tag :email, t('contact.form.email.label'), class: "block text-sm md:text-base font-medium text-white mb-2" %>
+                     <%= f.email_field :email, placeholder: t('contact.form.email.placeholder'), class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
                   </div>
                   <div class="mb-2">
-                     <%= label_tag :phone, "Your Phone", class: "block text-sm md:text-base font-medium text-white mb-2" %>
-                     <%= f.telephone_field :phone, placeholder: "12345678910", class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
+                     <%= label_tag :phone, t('contact.form.phone.label'), class: "block text-sm md:text-base font-medium text-white mb-2" %>
+                     <%= f.telephone_field :phone, placeholder: t('contact.form.phone.placeholder'), class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
                   </div>
                   <div class="mb-6">
-                     <%= label_tag :message, "Your Message", class: "block text-sm md:text-base font-medium text-white mb-2" %>
-                     <%= f.text_area :message, rows: 6, placeholder: "Write anything you want to tell us...", class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
+                     <%= label_tag :message, t('contact.form.message.label'), class: "block text-sm md:text-base font-medium text-white mb-2" %>
+                     <%= f.text_area :message, rows: 6, placeholder: t('contact.form.message.placeholder'), class: "w-full bg-[#244f79] rounded py-3 px-[14px] text-white text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-primary placeholder:text-gray-400", required: true %>
                   </div>
                   <div>
-                     <%= f.submit "Send Message", class: "w-full text-white bg-[#FF9925] rounded p-3 transition hover:bg-[#DD5121] cursor-pointer" %>
+                     <%= f.submit t('contact.form.submit.label'), class: "w-full text-white bg-[#FF9925] rounded p-3 transition hover:bg-[#DD5121] cursor-pointer" %>
                   </div>
                <% end %>
                <div>
